@@ -1,12 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './App.jsx';
 import reportWebVitals from './reportWebVitals';
+import { StateProvider } from './config/StateProvider';
+import { initialState } from './config/reducer'
+import reducer from './config/reducer'
+import {createMuiTheme, ThemeProvider} from '@material-ui/core/styles';
+import lightBlue from '@material-ui/core/colors/lightBlue'
+import blue from '@material-ui/core/colors/blue'
+
+const theme = createMuiTheme({
+  palette : {
+    primary: blue,
+    secondary: lightBlue,
+  }
+  
+})
 
 ReactDOM.render(
   <React.StrictMode>
+    <StateProvider initialState={initialState} reducer={reducer}>  
+    <ThemeProvider theme={theme}>
     <App />
+    </ThemeProvider>
+    </StateProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

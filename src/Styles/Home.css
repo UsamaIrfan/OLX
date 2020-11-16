@@ -1,0 +1,126 @@
+.home {
+   width: 100%;
+   max-width: 1400px;
+   margin: 0 auto;
+}
+
+.banner {
+   background-image: url("https://statics.olx.com.pk/external/base/img/hero_bg_pk.jpg");
+   height: 40vh;
+   background-repeat: no-repeat;
+   background-position: 50%;
+   background-size: cover;
+}
+
+.home__container {
+   margin: 0 1.5em;
+}
+
+.adItem__heading {
+   padding: 1em 2em 0 2em;
+   font-size: 24px;
+   color: var(--clr-main);
+   direction: ltr;
+   text-align: left;
+   text-size-adjust: 100%;
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+   background-color: #fff;
+   font-family: Arial,Helvetica,sans-serif;
+   font-weight: var(--fs-reg);
+}
+
+.home__loadMore {
+   width: 100%;
+   position: relative;
+}
+
+.home__loadMore button {
+   display: table;
+   margin: 0 auto;
+   padding: 10px 25px ;
+   background: #fff;
+   font-size: var(--fs-h4);
+   font-weight: 700;
+   border: 2px solid var(--clr-main);
+   border-radius: 5px;
+   cursor: pointer;
+   box-sizing: border-box;
+}
+
+.home__loadMore button:hover {
+   padding: 7px 22px;
+   border: 5px solid var(--clr-main);
+}
+
+.home__footerAd__container {
+   background: #F7F8F9;
+   border-bottom: 1px solid #ccc;
+}
+
+.home__footerAd {
+   display: flex;
+   align-items: center;
+   max-width: 1400px;
+   margin: 0 auto;
+   padding: 0 3em;
+}
+
+.home__footerAd-text {
+   flex: 1;
+   min-width: 200px;
+}
+
+.home__footerAd-textTitle {
+   font-size: var(--fs-h2);
+   text-transform: uppercase;
+   color: var(--clr-main);
+   /* margin-bottom: 20px; */
+}
+
+.home__footerAd-app {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   text-transform: uppercase;
+   font-size: var(--fs-small);
+   height: 100%;
+   margin-left: 20px;
+}
+
+.home__vertLine {
+   height: 100%;
+
+}
+
+.home__footerAd-appTitle {
+   margin-bottom: 10px;
+}
+
+.home__footerAd-appImg {
+   display: flex;
+}
+
+.home__footerAd-appImg img {
+   width: 125px;
+   margin-right: 7px;
+}
+
+@keyframes opacityFade {
+   0% {opacity: .5;}
+   50%{opacity: 1;}
+   100%{opacity: .5;}
+}
+
+@media screen and (max-width: 600px) {
+   .home__footerAd__container {
+      display: none;
+   }
+   .home__container {
+      margin: 0 .5em;
+      background: rgba(204, 204, 204, 0.3);
+   }
+   .adItem__heading {
+      padding: 1em 2em 0 0.3em;
+   }    
+}

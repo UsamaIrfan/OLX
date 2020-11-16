@@ -1,0 +1,138 @@
+.product {
+   height: 270px;
+   flex-basis: calc(25% - 20px);
+   min-width: 266px;
+   border: 1px solid #CCD5D6;
+   border-radius: 3px;
+   margin: 8px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   box-sizing: border-box;
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+   background: #fff;
+}
+
+.product__image {
+   width: 100%;
+   text-align: center;
+} 
+
+.product__image img {
+   width: 90%;
+   height: 160px;
+   object-fit: contain;
+}
+
+.product__info {
+   text-align: left;
+   padding: 0 15px;
+}
+
+.product__price {
+   direction: ltr;
+   font-weight: 700;
+   margin-bottom: 0;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   color: #002f34;
+   font-size: 20px;
+   margin: 5px 0;
+}
+
+.product__desc {
+   font-weight: 400;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   max-width: 240px;
+   color: rgba(0,47,52,.64);
+   font-size: 14px;
+}
+
+.product__meta {
+   display: flex;
+   justify-content: space-between;
+   text-transform: uppercase;
+   font-size: 10px;
+   text-align: left;
+   font-family: Roboto,Arial,Helvetica,sans-serif;
+   color:rgba(0,47,52,.64);
+   padding: 0 15px 8px 15px;
+}
+
+.featured__border {
+   position: absolute;
+   width: 5px;
+   height: 100px;
+   left: 0;
+   bottom: 0;
+   background: var(--clr-orange);
+}
+
+.featured__text {
+   position: absolute;
+   background-color: #ffce32;
+   color: #002f34;
+   font-size: 10px;
+   padding: 4px 8px;
+   font-weight: 700;
+   text-transform: uppercase;
+   top: 12px;
+   left: 8px;
+}
+
+.product__like {
+   position: absolute;
+   top: 12px;
+   right: 8px;
+   background: transparent;
+   border: none;
+   outline: none;
+}
+
+.product__like-icon {
+   font-size: 25px;
+   color: var(--clr-main);
+}
+
+.product__loginErr {
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 20;
+}
+
+.error__text {
+   position: relative;
+   background: white;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 250px;
+   padding: 15px;
+   border-radius: 3px;
+   border: 1px solid var(--clr-accent);
+   box-shadow: 1px 1px 3px #dadada;
+   font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+   .product {
+      height: 264px;
+      flex-basis: calc(50% - 16px);
+      min-width: 150px;
+      border: 1px solid #CCD5D6;
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+   }
+}

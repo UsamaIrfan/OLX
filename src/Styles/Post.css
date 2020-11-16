@@ -1,0 +1,136 @@
+
+.post {
+   width: 100%;
+}
+
+.post__nav {
+   display: flex;
+   height: 100%;
+   align-items: center;
+   color: var(--clr-main);
+}
+
+.post__nav-container {
+   background: #F7F8F9;
+   box-sizing: border-box;
+   box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+   height: 4.5em;
+   padding: 10px 16px;
+}
+
+.post__navImg {
+   width: 50px;
+   height: 50px;
+   object-fit: contain;
+}
+
+.post__navButton {
+   border: none;
+   cursor: pointer;
+}
+
+.post__navButton:focus {
+   outline: none;
+}
+
+.post__navBack {
+   margin-right: 20px;
+}
+
+.post__catagories {
+   width: 67.666666%;
+   margin: 0 auto;
+   box-sizing: border-box;
+}
+
+.post__catagories h3 {
+   width: 100%;
+   text-align: center;
+   font-size: 24px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: var(--clr-main);
+   margin-bottom: 10px;
+}
+
+.post__catagories-container {
+   font-weight: 500;
+   text-transform: uppercase;
+   font-weight: 700;
+   color: #002f34;
+   text-align: left;
+   border: 1px solid rgba(0,0,0,.2);
+   border-top-left-radius: 2px;
+   border-top-right-radius: 2px;
+   border-bottom: none;
+   padding: 1em;
+}
+
+.post__catagories-container h3 {
+   text-align: left;
+   font-size: 16px;
+}
+
+.post__catagoriesList-container {
+   border: 1px solid rgba(0,0,0,.2);
+   border-bottom-left-radius: 2px;
+   border-bottom-right-radius: 2px;
+   margin-bottom: 20px;
+   display: flex;
+   padding-bottom: 20px;
+}
+
+.post__list {
+   list-style: none;
+   width: 50%;
+   border-right: 1px solid rgba(0,0,0,.2);
+}
+
+.post__list Link {
+   text-decoration: none;
+   color: green;
+}
+
+.post__list-item {
+   height: 35px;
+   padding: 8px;
+   font-size: 16px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-weight: var(--fw-reg);
+   line-height: 2;
+   color: rgba(0,47,52,.64);
+   cursor: pointer;
+   position: relative;
+   text-decoration: none;
+   border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.post__list-link {
+   text-decoration: none;
+}
+
+.post__list-text {
+   text-decoration: none;
+}
+
+.list__bottom {
+   align-self: flex-end;
+}
+
+.post__list-item:hover {
+   color: var(--clr-main);
+   background-color: rgba(0,47,52,.2);
+}
+
+.post__sublist-item {
+   position: absolute;
+}
+
+
+@media screen and (max-width: 600px) {
+   .post__list-item {
+      font-size: 12px;
+   }
+}
